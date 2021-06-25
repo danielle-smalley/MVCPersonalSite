@@ -386,7 +386,6 @@
     <Content Include="Views\Shared\_LayoutActualOriginal.cshtml" />
     <Content Include="_Archive\About.cshtml" />
     <Content Include="_Archive\Contact.cshtml" />
-    <Content Include="_Archive\Index.cshtml" />
     <Content Include="Views\UsersAdmin\Index.cshtml" />
     <Content Include="Views\UsersAdmin\Edit.cshtml" />
     <Content Include="Views\UsersAdmin\Details.cshtml" />
@@ -428,7 +427,7 @@
     <Content Include="_Archive\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="_Archive\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="_Archive\img\site.webmanifest" />
-    <Content Include="Views\Shared\_LayoutOriginal.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
