@@ -26,6 +26,8 @@
     <!-- Main Stylesheet File -->
     <link href="~/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
+
+    @Scripts.Render("~/bundles/modernizr")
     <!-- =======================================================
       Template Name: Solid
       Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -61,10 +63,11 @@
         </div>
     </div>
 
+    @RenderBody()
 
     <div id="copyrights">
         <div class="container">
-            @RenderBody()
+
             <p>
                 &copy; Danielle Smalley 2021
             </p>
@@ -93,10 +96,10 @@
     <script src="js/main.js"></script>
 
     @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Styles.Render("~/Content/css")*@
-    @Scripts.Render("~/bundles/modernizr")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/bootstrap")
+        @Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    @RenderSection("scripts", false)
 
     <!-- Template Main Javascript File -->
     @*<script src="~/Scripts/js/jquery.js"></script>
