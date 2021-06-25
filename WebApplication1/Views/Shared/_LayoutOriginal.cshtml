@@ -16,18 +16,16 @@
 
     <!-- Bootstrap CSS File -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap.min.css.map" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.min.css.map" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    @*<link href="~/Content/bootstrap.min.css.map" rel="stylesheet" />
+        <link href="~/Content/bootstrap-theme.min.css.map" rel="stylesheet" />
+        <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />*@
     <!-- Libraries CSS Files -->
     <link href="~/Content/prettyphoto/css/prettyphoto.css" rel="stylesheet" />
     <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-    <link href="~/Content/hover/hoverex-all.css" rel="stylesheet" />
-
     <!-- Main Stylesheet File -->
+    <link href="~/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
-
     <!-- =======================================================
       Template Name: Solid
       Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -83,23 +81,26 @@
     </div>
     <!-- / copyrights -->
     <!-- JavaScript Libraries -->
-    <script src="~/Content/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Scripts/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery.validate.js"></script>
-    <script src="~/Content/Scripts/prettyphoto.js"></script>
-    <script src="~/Scripts/isotope.min.js"></script>
-    <script src="~/Scripts/hoverex.min.js"></script>
-    <script src="~/Scripts/hoverdir.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/validate.js"></script>
+    <script src="Scripts/prettyphoto.js"></script>
+    <script src="Scripts/isotope.min.js"></script>
+    <script src="../Scripts/hoverex.min.js"></script>
+    <script src="../Scripts/hoverdir.js"></script>
 
-    @Scripts.Render("~/bundles/jquery")
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css")*@
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("scripts", required: false)
 
     <!-- Template Main Javascript File -->
-    <script src="~/Scripts/js/jquery.js"></script>
-    <script src="~/Scripts/js/jquery.min.js"></script>
+    @*<script src="~/Scripts/js/jquery.js"></script>
+        <script src="~/Scripts/js/jquery.min.js"></script>*@
     <script src="~/Scripts/js/main.js"></script>
 
     <!-- Custom Script to highlight the selected navigation -->
