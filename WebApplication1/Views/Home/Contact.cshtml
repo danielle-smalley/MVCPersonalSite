@@ -1,61 +1,68 @@
-﻿@{
+﻿@model WebApplication1.Models.ContactViewModel
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<div id="blue">
-    <div class="container">
-        <div class="row">
-            <h3>Contact Me</h3>
-        </div>
-        <!-- /row -->
-    </div>
-    <!-- /container -->
-</div>*@
-<!-- /blue -->
-<!-- *****************************************************************************************************************
-   CONTACT FORMS
-   ***************************************************************************************************************** -->
-@*<div class="contactpic">
-    @*<img src="~/Content/img/envelope.jpg" height="150" width="400" />
-</div>*@
-<div class="container mtb contactpic">
-    <div class="row">
-        <div class="col-lg-12 contactme">
-            <h4 class="contacttext">Send me a message! - THIS FORM IS UNDER CONSTRUCTION</h4>
-            <div class="hline"></div>
-            <p class="contacttext">Please fill out the contact form below and I will respond as soon as possible.</p>
-            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+@*<h2>Contact</h2>*@
 
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 characters">
-                    <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email address">
-                    <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter a subject">
-                    <div class="validate"></div>
-                </div>
 
-                <div class="form-group">
-                    <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write your message here"></textarea>
-                    <div class="validate"></div>
-                </div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-                <div class="loading"></div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <div class="form-send">
-                    <button type="submit" class="btn btn-large">Send Message</button>
-                </div>
-
-            </form>
-        </div>
+    <br />
+    <br />
+    <br />
+    <h2>FORM UNDER CONSTRUCTION</h2>
+    <h2>Send me a message, let's get in touch!</h2>
+    <div class="form-horizontal">
         <br />
-        @*<div class="clear"></div>*@
+        <br />
+        <br />
+        <br />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Send Message" class="btn btn-default" />
+            </div>
+        </div>
     </div>
-</div>
-<br />
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
