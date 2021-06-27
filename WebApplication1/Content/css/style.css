@@ -14,7 +14,7 @@
 	}
 
 body {
-    /*background-image: url('../img/pexels-free-nature-stock-1376766.jpg');*/
+
     background: #f3e6fa;
     margin: 0;
     height: 100%;
@@ -24,8 +24,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
 }
 
 p {
@@ -200,7 +200,10 @@ a:focus {
 }
 
 .mb {
-	margin-bottom: 60px;
+    font-size: 40px;
+    text-shadow: 5px 5px 8px #38084d;
+    padding-top: -40px;
+    padding-bottom: 80px;
 }
 
 .mt {
@@ -220,22 +223,26 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-
     min-height: 100px;
     padding-top: 100px;
     padding-bottom: 0px;
     text-align: center;
+    color: #E6FB04;
+    text-shadow: 5px 5px 8px #38084d;
 }
+
 
 #headerwrap h3, h5 {
 	color: black;
 	font-weight: 400;
 }
 
-#headerwrap h1 {
-	color: black;
-	/*margin-bottom: 25px;*/
-}
+    #headerwrap h1 {
+        color: #FFFF00;
+        text-align: center;
+        /*font-family:*/ 
+        /*margin-bottom: 25px;*/
+    }
 
 #headerwrap .img-responsive {
 	margin: 0 auto;
@@ -257,7 +264,7 @@ a:focus {
 #portfoliowrap {
 	padding-top: 60px;
 	margin-bottom: 60px;
-	display: block;
+	display: inline-block;
 	text-align: center
 }
 
@@ -297,6 +304,7 @@ a:focus {
     width: 100%;
     background-color:rgba(140,5,218,.8);
     text-align: center;
+    display: inline-block;
 }
 
 /* Testimonials Wrap */
@@ -618,9 +626,8 @@ csmall2 {
     text-align: center;
     padding-top: 40px;
     color: #57026f;
-    font-family:'Lato', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 10px;
 }
 
@@ -702,11 +709,11 @@ div {
     padding-bottom: 30px;
 }
 
-.aboutmetext{
+.aboutmetext {
     text-align: center;
-    padding-bottom: 200px;
-    color: white;
-    font-size: 20px;
+    padding-bottom: 100px;
+    color: #2b2b2b;
+    font-size: 22px;
 }
 
 #resumeimg {
@@ -721,7 +728,7 @@ div {
     border: 1px solid black;
     background: black;
     font-weight: bold;
-    color: goldenrod;
+    color: #F2EA02;
     font-size: 3em;
 }
 
@@ -737,7 +744,8 @@ div {
 .ui-widget-content {
     border: 1px solid #dddddd;
     color: #333333;
-    background-image: url('../img/pexels-tom-swinnen-2249961.jpg');
+    /*background-image: url('../img/pexels-tom-swinnen-2249961.jpg');*/
+    background-image: url('../img/pexels-henry-&-co-2341290.jpg');
     background-size: cover;
     background-attachment: scroll;
     font-family: 'Lato', sans-serif;
@@ -745,9 +753,19 @@ div {
 }
 
 .jumbotron {
-    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
+    background-image: url('../img/pexels-kira-schwarz-8053971.jpg');
+    opacity: 0.8;
+    background-size: cover;
+    color: #E6FB04;
 }
+
+
+    .jumbotron:hover {
+        opacity: 0.5;
+    }
+
+
 
 .contacttext {
     font-size: 30px;
