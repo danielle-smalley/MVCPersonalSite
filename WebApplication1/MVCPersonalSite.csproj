@@ -191,7 +191,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\contact.html" />
     <Content Include="Content\contactform.php" />
+    <Content Include="Content\css\bootstrapvapor.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\curly.png" />
+    <Content Include="Content\img\semi.png" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
@@ -246,7 +249,11 @@
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\DanielleSmalleyITResume2.pdf" />
     <None Include="Content\Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Content\Scripts\hoverdir.js" />
+    <Content Include="Content\Scripts\hoverex-all.css" />
+    <Content Include="Content\Scripts\hoverex.min.js" />
     <Content Include="Content\Scripts\isotope.min.js" />
     <Content Include="Content\Scripts\jquery-3.3.1.js" />
     <Content Include="Content\Scripts\jquery-3.3.1.min.js" />
@@ -274,7 +281,7 @@
     <Content Include=".gitignore" />
     <Content Include="configs\connections.config" />
     <Content Include="Scripts\bootstrap\css\bootstrap.css" />
-    <Content Include="Scripts\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap\js\bootstrap.js" />
     <Content Include="Scripts\bootstrap\js\bootstrap.min.js" />
@@ -287,7 +294,6 @@
     <Content Include="Scripts\js\jquery.js" />
     <Content Include="Scripts\js\jquery.min.js" />
     <Content Include="Scripts\js\main.js" />
-    <Content Include="Scripts\prettyphoto.js" />
     <Content Include="Scripts\validate.js" />
     <Content Include="_Archive\about.html" />
     <Content Include="_Archive\blog.html" />

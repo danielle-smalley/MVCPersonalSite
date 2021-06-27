@@ -7,27 +7,28 @@
     <meta content="personal portfolio" name="keywords">
     <meta content="daniellethedev - Full Stack Web Developer - Portfolio and Resume" name="description">
 
-    <!-- Favicons -->
-    <!--<link href="img/favicon.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Lato:400,900" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" type="image/jpg" href="~/Content/favicon.ico" />
 
     <!-- Bootstrap CSS File -->
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    @*<link href="~/Content/bootstrap.min.css.map" rel="stylesheet" />
-        <link href="~/Content/bootstrap-theme.min.css.map" rel="stylesheet" />
-        <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css.map" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css.map" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <!-- Libraries CSS Files -->
-    <link href="~/Content/prettyphoto/css/prettyphoto.css" rel="stylesheet" />
     <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/hoverex-all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- Main Stylesheet File -->
-    <link href="~/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
     <link href="~/Content/css/style.css" rel="stylesheet" />
 
-    @Scripts.Render("~/bundles/modernizr")
     <!-- =======================================================
       Template Name: Solid
       Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -48,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">DANIELLETHEDEV</a>
+                <a class="navbar-brand" href="http://daniellethedev.com">DANIELLETHEDEV</a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
@@ -67,7 +68,7 @@
 
     <div id="copyrights">
         <div class="container">
-
+            <a href="#">Back to Top</a>
             <p>
                 &copy; Danielle Smalley 2021
             </p>
@@ -83,40 +84,47 @@
         </div>
     </div>
     <!-- / copyrights -->
+    <!-- Template Main Javascript File -->
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <!-- JavaScript Libraries -->
-    <script src="Scripts/jquery.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/validate.js"></script>
-    <script src="Scripts/prettyphoto.js"></script>
-    <script src="Scripts/isotope.min.js"></script>
-    <script src="../Scripts/hoverex.min.js"></script>
-    <script src="../Scripts/hoverdir.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
-    @*@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @Styles.Render("~/Content/css")*@
-    @*@Scripts.Render("~/bundles/modernizr")*@
-    @RenderSection("scripts", false)
-
-    <!-- Template Main Javascript File -->
-    @*<script src="~/Scripts/js/jquery.js"></script>
-        <script src="~/Scripts/js/jquery.min.js"></script>*@
     <script src="~/Scripts/js/main.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Content/Scripts/bootstrap.min.js"></script>
+    <script src="~/Content/Scripts/validate.js"></script>
+    <script src="~/Content/Scripts/isotope.min.js"></script>
+    <script src="~/Content/Scripts/hoverex.min.js"></script>
+    <script src="~/Content/Scripts/hoverdir.js"></script>
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+
+
 
     <!-- Custom Script to highlight the selected navigation -->
-
     <script>
         $(function () {
-            $('div.navbar div.container a.navbar-brand').each(
+            $('div.navbar-collapse ul.nav li').each(
                 function () {
                     if ($(this).find('a').attr('href') == window.location.pathname) {
                         $(this).addClass("active");
                     }
                 }
             )
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
         });
     </script>
 
