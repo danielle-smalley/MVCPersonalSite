@@ -3,7 +3,7 @@ jQuery(document).ready(function( $ ) {
   $('a[data-gal]').each(function() {
     $(this).attr('rel', $(this).data('gal'));
   });
-  $("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
+  //$("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
 
   // Isotope Options
   var $grid = $('.portfolio'),
@@ -14,17 +14,17 @@ jQuery(document).ready(function( $ ) {
     portfolioLayout = 'masonry';
   }
 
-  $grid.isotope({
-    filter: '*',
-    animationEngine: 'best-available',
-    layoutMode: portfolioLayout,
-    animationOptions: {
-      duration: 750,
-      easing: 'linear',
-      queue: false
-    },
-    masonry: {}
-  }, refreshWaypoints());
+  //$grid.isotope({
+  //  filter: '*',
+  //  animationEngine: 'best-available',
+  //  layoutMode: portfolioLayout,
+  //  animationOptions: {
+  //    duration: 750,
+  //    easing: 'linear',
+  //    queue: false
+  //  },
+  //  masonry: {}
+  //}, refreshWaypoints());
 
   function refreshWaypoints() {
     setTimeout(function() {}, 1000);
@@ -75,9 +75,9 @@ jQuery(document).ready(function( $ ) {
     $grid.isotope('layout');
   }
 
-  //$grid.imagesLoaded(function() {
-  //  setPortfolio();
-  //});
+  $grid.imagesLoaded(function() {
+    setPortfolio();
+  });
 
   $(window).on('resize', function() {
     setPortfolio();

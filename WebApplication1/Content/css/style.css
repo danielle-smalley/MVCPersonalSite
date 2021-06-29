@@ -595,9 +595,10 @@ csmall2 {
 /* Copyrights */
 
 #copyrights {
-  background: #2b2b2b;
-  padding: 20px 0;
-  text-align: center;
+    background: #2b2b2b;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
 }
 
 #copyrights p {

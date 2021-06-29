@@ -6,25 +6,25 @@ jQuery(document).ready(function( $ ) {
   //$("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
 
   // Isotope Options
-  var $container = $('.portfolio'),
-    $items = $container.find('.portfolio-item'),
+  var $grid = $('.portfolio'),
+    $items = $grid.find('.portfolio-item'),
     portfolioLayout = 'fitRows';
 
-  if ($container.hasClass('portfolio-centered')) {
+  if ($grid.hasClass('portfolio-centered')) {
     portfolioLayout = 'masonry';
   }
 
-  //$container.isotope({
-  //  filter: '*',
-  //  animationEngine: 'best-available',
-  //  layoutMode: portfolioLayout,
-  //  animationOptions: {
-  //    duration: 750,
-  //    easing: 'linear',
-  //    queue: false
-  //  },
-  //  masonry: {}
-  //}, refreshWaypoints());
+  $grid.isotope({
+    filter: '*',
+    animationEngine: 'best-available',
+    layoutMode: portfolioLayout,
+    animationOptions: {
+      duration: 750,
+      easing: 'linear',
+      queue: false
+    },
+    masonry: {}
+  }, refreshWaypoints());
 
   function refreshWaypoints() {
     setTimeout(function() {}, 1000);
@@ -32,7 +32,7 @@ jQuery(document).ready(function( $ ) {
 
   $('nav.portfolio-filter ul a').on('click', function() {
     var selector = $(this).attr('data-filter');
-    $container.isotope({
+    $grid.isotope({
       filter: selector
     }, refreshWaypoints());
     $('nav.portfolio-filter ul a').removeClass('active');
@@ -63,7 +63,7 @@ jQuery(document).ready(function( $ ) {
       columnNumber = getColumnNumber(),
       itemWidth = Math.floor(winWidth / columnNumber);
 
-    $container.find('.portfolio-item').each(function() {
+    $grid.find('.portfolio-item').each(function() {
       $(this).css({
         width: itemWidth + 'px'
       });
@@ -72,10 +72,10 @@ jQuery(document).ready(function( $ ) {
 
   function setPortfolio() {
     setColumns();
-    $container.isotope('reLayout');
+    $grid.isotope('layout');
   }
 
-  $container.imagesLoaded(function() {
+  $grid.imagesLoaded(function() {
     setPortfolio();
   });
 

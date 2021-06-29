@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 
-    <!--TODO - need help linking projects so the details pages load when you click details on project page-->
+    <!--TODO - Add subdomain for projects and them on projects page-->
+    <!--TODO - don't forget to update the projects links/names in the html actionlink once those are ready-->
     <!--TODO - There's an error on my Projects page that will not disappear...affecting my layout? Supposed to be horizontal, not vertical-->
+    <!--TODO - Email form not working at all, need to also restyle this page again-->
+
+
     <meta charset="utf-8">
     <title>daniellethedev | Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -34,6 +38,8 @@
 
     <link href="~/Content/css/style.css" rel="stylesheet" />
 
+    @Scripts.Render("~/bundles/modernizr")
+
     <!-- =======================================================
       Template Name: Solid
       Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -62,7 +68,8 @@
                     <li><a href="@Url.Action("Resume", "Home")">RESUME</a></li>
                     <li><a href="@Url.Action("Projects", "Home")">PROJECTS</a></li>
                     <li><a href="@Url.Action("Links", "Home")">LINKS</a></li>
-                    <li><a href="@Url.Action("Contact", "Home")">CONTACT</a></li>
+                    <li><a href="@Url.Action("Contact", "Email", "Email")">CONTACT</a></li>
+
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -90,25 +97,26 @@
     </div>
     <!-- / copyrights -->
     <!-- Template Main Javascript File -->
-    <script src="~/Scripts/js/jquery.js"></script>
+
     <script src="~/Scripts/js/jquery.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    @*<script src="https://code.jquery.com/jquery-1.12.4.js"></script>*@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- JavaScript Libraries -->
-    <script src="~/Scripts/js/main.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
+    @*<script src="~/Scripts/isotope.pkgd.min.js"></script>*@
+
     <script src="~/Content/Scripts/bootstrap.min.js"></script>
     <script src="~/Content/Scripts/validate.js"></script>
-
-    <script src="~/Content/Scripts/hoverex.min.js"></script>
-    <script src="~/Content/Scripts/hoverdir.js"></script>
     <script src="~/Content/Scripts/isotope.min.js"></script>
+    <script src="~/Content/Scripts/hoverdir.js"></script>
+    <script src="~/Content/Scripts/hoverex.min.js"></script>
 
 
-    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/main.js"></script>
+
+
     @RenderSection("scripts", required: false)
 
 

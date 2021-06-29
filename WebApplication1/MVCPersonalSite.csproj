@@ -299,11 +299,13 @@
     <Content Include="Scripts\hoverdir.js" />
     <Content Include="Scripts\hoverex.min.js" />
     <Content Include="Scripts\isotope.min.js" />
+    <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\jquery.min.js" />
     <Content Include="Scripts\js\jquery.js" />
     <Content Include="Scripts\js\jquery.min.js" />
     <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\validate.js" />
     <Content Include="_Archive\about.html" />
     <Content Include="_Archive\blog.html" />
@@ -451,12 +453,11 @@
     <Content Include="Views\Projects\EducationalSite.cshtml" />
     <Content Include="Views\Projects\DungeonCrawler.cshtml" />
     <Content Include="Views\Home\Contact - Copy.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\EmailConfirmation.cshtml" />
+    <Content Include="Views\Email\Contact.cshtml" />
+    <Content Include="Views\Email\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
