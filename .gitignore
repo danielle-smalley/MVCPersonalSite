@@ -349,5 +349,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# Prevent Sensitive data from being submitted
-/MVCPersonalSite/configs
+# Prevent sensitive data from being submitted
+/MVCPersonalSite/WebApplication1/configs
