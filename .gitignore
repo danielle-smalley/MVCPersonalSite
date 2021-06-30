@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 # Prevent sensitive data from being submitted
-/MVCPersonalSite/WebApplication1/configs
+/MVCPersonalSite/configs
