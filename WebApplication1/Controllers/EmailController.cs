@@ -74,7 +74,7 @@ namespace WebApplication1.Controllers
                 }
                 catch (Exception ex)
                 {
-                    ViewBag.CustomerMessage = $"Hmm, that didn't work. Please try again later. Error Message:\n {ex.StackTrace}"; //not common practice to actually include the StackTrace error message
+                    ViewBag.CustomerMessage = $"Ope. Looks like that didn't work. Please try again later. Error Message:\n {ex.StackTrace}"; //not common practice to actually include the StackTrace error message
                     return View(cvm); //this will repopulate the form for them instead of wiping it all and user has to re-enter everything
                     //throw;
                 }//end try catch

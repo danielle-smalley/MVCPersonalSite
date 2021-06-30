@@ -197,6 +197,7 @@
     <Content Include="Content\contactform.php" />
     <Content Include="Content\css\bootstrapvapor.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\CentriqLogo.png" />
     <Content Include="Content\img\curly.png" />
     <Content Include="Content\img\disco2.JPG" />
     <Content Include="Content\img\disco3.JPG" />

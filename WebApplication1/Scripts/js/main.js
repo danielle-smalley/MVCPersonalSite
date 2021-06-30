@@ -81,5 +81,30 @@ jQuery(document).ready(function( $ ) {
 
   $(window).on('resize', function() {
     setPortfolio();
-  });
+    });
+
+    $(function () {
+
+
+        var $container = $('#container');
+
+        $container.isotope({
+            itemSelector: '.item',
+            masonry: {
+                columnWidth: 60
+            }
+        })
+
+        $('.item').click(function () {
+            var $this = $(this),
+                tileStyle = $this.hasClass('big') ? { width: 50, height: 50 } : { width: 170, height: 110 };
+            $this.toggleClass('big');
+
+            $this.find('.item-content').stop().animate(tileStyle);
+
+            $container.isotope('Layout')
+
+        });
+
+    });
 });

@@ -775,3 +775,16 @@ div {
     font-family: 'Lato', sans-serif;
     padding: 20px;
 }
+
+#spin {
+    background: #E6FB04;
+    border-radius: 2% 35%;
+    height: 100px;
+    margin: 100px;
+    transition: all 3s;
+    /*transition-timing-function: ease-in-out;*/
+    width: 100px;
+}
+#spin:hover {
+    transform: rotate(1080deg);
+}
