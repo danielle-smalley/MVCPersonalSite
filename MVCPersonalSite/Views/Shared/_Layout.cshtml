@@ -5,7 +5,6 @@
     <!--TODO - Add subdomain for projects and them on projects page-->
     <!--TODO - don't forget to update the projects links/names in the html actionlink once those are ready-->
     <!--TODO - There's an error on my Projects page that will not disappear...affecting my layout? Supposed to be horizontal, not vertical-->
-    <!--TODO - Email form not working at all, need to also restyle this page again-->
 
 
     <meta charset="utf-8">
@@ -24,22 +23,20 @@
     <link rel="shortcut icon" type="image/jpg" href="~/Content/favicon.ico" />
 
     <!-- Bootstrap CSS File -->
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap.min.css.map" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.min.css.map" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="~/Content/prettyphoto.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Libraries CSS Files -->
     <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4263a2b62a.js" crossorigin="anonymous"></script>
+    <link href="~/Content/prettyphoto.css" rel="stylesheet" />
     <link href="~/Content/hoverex-all.css" rel="stylesheet" />
+
+    <!--jQuery accordion style-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- Main Stylesheet File -->
-
     <link href="~/Content/css/style.css" rel="stylesheet" />
 
-    @*@Scripts.Render("~/bundles/modernizr")*@
 
     <!-- =======================================================
       Template Name: Solid
@@ -92,31 +89,35 @@
                   Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/solid-bootstrap-business-template/
                   Licensing information: https://templatemag.com/license/
                 -->
-                Created with Solid template by <a href="https://templatemag.com/">TemplateMag</a>
+                Created with Solid template by <a href="https://templatemag.com/">TemplateMag</a>, converted to MVC and styled by Danielle Smalley
             </div>
         </div>
     </div>
     <!-- / copyrights -->
     <!-- Template Main Javascript File -->
+    @*<script src="~/Scripts/js/jquery.min.js"></script>*@
+    @*<script src="~/Content/Scripts/bootstrap.min.js"></script>*@
 
-    <script src="~/Scripts/js/jquery.min.js"></script>
-    <script src="~/Content/Scripts/bootstrap.min.js"></script>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="~/Content/Scripts/jquery.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- JavaScript Libraries -->
-    @*<script src="~/Scripts/isotope.pkgd.min.js"></script>*@
-
-
+    <script src="~/Content/Scripts/bootstrap.js"></script>
+    <script src="~/Content/Scripts/isotope.min.js"></script>
     <script src="~/Content/Scripts/validate.js"></script>
     <script src="~/Content/Scripts/prettyphoto.js"></script>
-
     <script src="~/Content/Scripts/hoverdir.js"></script>
     <script src="~/Content/Scripts/hoverex.min.js"></script>
-
-    <script src="~/Scripts/main.js"></script>
+    <script src="~/Content/Scripts/main.js"></script>
 
     @RenderSection("scripts", required: false)
+
+
 
 
 
@@ -140,11 +141,10 @@
             });
         });
     </script>
-
 </body>
 </html>
 
-<script>
+@*<script>
     $('.item').click(function () {
         var $this = $(this),
             tileStyle = $this.hasClass('big') ? { width: 50, height: 50 } : { width: 170, height: 110 };
@@ -155,5 +155,5 @@
         $container.isotope('Layout')
 
     });
-</script>
-<script src="~/Content/Scripts/isotope.min.js"></script>
+</script>*@
+
