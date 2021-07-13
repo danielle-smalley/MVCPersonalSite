@@ -315,7 +315,7 @@ a {
 .tpl6 .bg {
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0, .2);
+    background-color: RGBA(153,0,255, .8); 
     text-align: center;
     display: inline-block;
 }
