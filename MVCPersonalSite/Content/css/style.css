@@ -315,20 +315,20 @@ a {
 .tpl6 .bg {
     height: 100%;
     width: 100%;
-    background-color: rgba(140,5,218,.8);
+    background-color: rgba(0,0,0, .2);
     text-align: center;
     display: inline-block;
 }
 
 /* Testimonials Wrap */
 #twrap {
-    background: url(../img/t-back.jpg) no-repeat center top;
-    margin-top: 0px;
-    padding-top: 60px;
+    margin: 0px;
+    padding: 0px;
+    /*padding-top: 10px;*/
     text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 450px;
+    /*background-attachment: relative;*/
+    /*background-position: center center;
+    min-height: 450px;*/
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -341,15 +341,17 @@ a {
 }
 
     #twrap i {
-        font-size: 50px;
+        font-size: 45px;
         color: white;
         margin-bottom: 25px;
     }
 
     #twrap p {
         color: white;
-        font-size: 15px;
+        font-size: 30px;
         line-height: 30px;
+        margin: 0px;
+        padding: 0px;
     }
 
 /* clients logo */
@@ -777,7 +779,17 @@ div {
         opacity: 0.5;
     }
 
+.jumbotron2 {
+    box-sizing: border-box;
+    background-color: RGBA(0,0,0,.8);
+    /*opacity: 0.8;*/
+    color: #E6FB04;
+}
 
+
+    /*.jumbotron2:hover {
+        opacity: 0.5;
+    }*/
 
 #contacttext {
     font-size: 0px;

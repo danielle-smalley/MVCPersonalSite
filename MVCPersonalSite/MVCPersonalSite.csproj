@@ -203,7 +203,7 @@
     <Content Include="Content\img\disco3.JPG" />
     <Content Include="Content\img\disco4.JPG" />
     <Content Include="Content\img\languagesskills\agilescrum.jpg" />
-    <Content Include="Content\img\languagesskills\asp.net.png" />
+    <Content Include="Content\img\languagesskills\pic.png" />
     <Content Include="Content\img\languagesskills\bootstrap-6-1175203.png" />
     <Content Include="Content\img\languagesskills\c-icon-455x512-nnvx09v8.png" />
     <Content Include="Content\img\languagesskills\css-icon-png-0.jpg" />
@@ -364,7 +364,6 @@
     <Content Include="_Archive\img\resumepic2.JPG" />
     <Content Include="_Archive\img\rpalmer.jpg" />
     <Content Include="_Archive\img\rupson.jpg" />
-    <Content Include="_Archive\img\t-back.jpg" />
     <Content Include="_Archive\img\thumb01.jpg" />
     <Content Include="_Archive\img\thumb02.jpg" />
     <Content Include="_Archive\img\thumb03.jpg" />
