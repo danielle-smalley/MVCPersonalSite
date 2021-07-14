@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 
-    <!--TODO - Add subdomain for projects and them on projects page-->
-    <!--TODO - don't forget to update the projects links/names in the html actionlink once those are ready-->
-    <!--TODO - There's an error on my Projects page that will not disappear...affecting my layout? Supposed to be horizontal, not vertical-->
-
-
+    <!--TODO - Add subdomain for remaining projects and them on projects page-->
+    <!--TODO - don't forget to update the projects links/names/descriptions in the html actionlink once those are ready-->
+ 
     <meta charset="utf-8">
     <title>daniellethedev</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,21 +20,18 @@
 
     <link rel="shortcut icon" type="image/jpg" href="~/Content/favicon.ico" />
 
-    <!-- Bootstrap CSS File -->
+    @*<!-- Bootstrap CSS File -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Libraries CSS Files -->
-    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />*@
     <script src="https://kit.fontawesome.com/4263a2b62a.js" crossorigin="anonymous"></script>
-    <link href="~/Content/prettyphoto.css" rel="stylesheet" />
-    <link href="~/Content/hoverex-all.css" rel="stylesheet" />
-
+    @*<link href="~/Content/prettyphoto.css" rel="stylesheet" />
+    <link href="~/Content/hoverex-all.css" rel="stylesheet" />*@
     <!--jQuery accordion style-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+    @Styles.Render("~/Content/css")
     <!-- Main Stylesheet File -->
-    <link href="~/Content/css/style.css" rel="stylesheet" />
-
+    @*<link href="~/Content/css/style.css" rel="stylesheet" />*@
 
     <!-- =======================================================
       Template Name: Solid
@@ -94,34 +89,21 @@
         </div>
     </div>
     <!-- / copyrights -->
-    <!-- Template Main Javascript File -->
     @*<script src="~/Scripts/js/jquery.min.js"></script>*@
     @*<script src="~/Content/Scripts/bootstrap.min.js"></script>*@
-
-
-
-
-    <!-- JavaScript Libraries -->
     <script src="~/Content/Scripts/jquery.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script src="~/Content/Scripts/bootstrap.js"></script>
-    <script src="~/Content/Scripts/isotope.min.js"></script>
-    <script src="~/Content/Scripts/validate.js"></script>
-    <script src="~/Content/Scripts/prettyphoto.js"></script>
-    <script src="~/Content/Scripts/hoverdir.js"></script>
-    <script src="~/Content/Scripts/hoverex.min.js"></script>
-    <script src="~/Content/Scripts/main.js"></script>
-
+    @*<script src="~/Content/Scripts/bootstrap.js"></script>
+        <script src="~/Content/Scripts/isotope.min.js"></script>
+        <script src="~/Content/Scripts/validate.js"></script>
+        <script src="~/Content/Scripts/prettyphoto.js"></script>
+        <script src="~/Content/Scripts/hoverdir.js"></script>
+        <script src="~/Content/Scripts/hoverex.min.js"></script>
+        <script src="~/Content/Scripts/main.js"></script>*@
     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/template")
 
-
-
-
-
-    <!-- Custom Script to highlight the selected navigation -->
     <script>
         $(function () {
             $('div.navbar-collapse ul.nav li').each(

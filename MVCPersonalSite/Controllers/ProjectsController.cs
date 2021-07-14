@@ -7,7 +7,7 @@ using MVCPersonalSite.Models;
 
 namespace WebApplication1.Controllers
 {
-    //TODO - get these links working!
+
     public class ProjectsController : Controller
     {
         // GET: Projects
