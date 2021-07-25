@@ -20,5 +20,20 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public ActionResult StoreFront()
+        {
+            return View();
+        }
+
+        public ActionResult Scheduling()
+        {
+            return View();
+        }
+
+        public ActionResult WishList()
+        {
+            return View();
+        }
     }
 }

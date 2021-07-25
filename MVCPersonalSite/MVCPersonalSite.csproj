@@ -197,11 +197,13 @@
     <Content Include="Content\contactform.php" />
     <Content Include="Content\css\bootstrapvapor.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\Capture.JPG" />
     <Content Include="Content\img\CentriqLogo.png" />
     <Content Include="Content\img\curly.png" />
     <Content Include="Content\img\disco2.JPG" />
     <Content Include="Content\img\disco3.JPG" />
     <Content Include="Content\img\disco4.JPG" />
+    <Content Include="Content\img\inprogress.jpg" />
     <Content Include="Content\img\languagesskills\agilescrum.jpg" />
     <Content Include="Content\img\languagesskills\pic.png" />
     <Content Include="Content\img\languagesskills\bootstrap-6-1175203.png" />
@@ -263,6 +265,13 @@
     <Content Include="Content\img\project1_288x288.jpg" />
     <Content Include="Content\img\resumepic1.JPG" />
     <Content Include="Content\img\resumepic2.JPG" />
+    <Content Include="Content\img\store1.JPG" />
+    <Content Include="Content\img\store2.JPG" />
+    <Content Include="Content\img\store3.JPG" />
+    <Content Include="Content\img\store4.JPG" />
+    <Content Include="Content\img\store5.png" />
+    <Content Include="Content\img\store6.JPG" />
+    <Content Include="Content\img\Store7.JPG" />
     <Content Include="Content\index.html" />
     <Content Include="Content\Links.html" />
     <Content Include="Content\OriginalFiles\bootstrap\css\bootstrap.css" />
@@ -448,6 +457,9 @@
     <Content Include="Views\Home\Contact - Copy.cshtml" />
     <Content Include="Views\Email\Contact.cshtml" />
     <Content Include="Views\Email\EmailConfirmation.cshtml" />
+    <Content Include="Views\Projects\StoreFront.cshtml" />
+    <Content Include="Views\Projects\Scheduling.cshtml" />
+    <Content Include="Views\Projects\WishList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
