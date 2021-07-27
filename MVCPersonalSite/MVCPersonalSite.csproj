@@ -272,8 +272,10 @@
     <Content Include="Content\img\store5.png" />
     <Content Include="Content\img\store6.JPG" />
     <Content Include="Content\img\Store7.JPG" />
+    <Content Include="Content\img\wishlist.jpg" />
     <Content Include="Content\index.html" />
     <Content Include="Content\Links.html" />
+    <Content Include="Content\logo-og.png" />
     <Content Include="Content\OriginalFiles\bootstrap\css\bootstrap.css" />
     <Content Include="Content\OriginalFiles\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\OriginalFiles\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -491,9 +493,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51776</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51776/</IISUrl>
+          <IISUrl>http://localhost:50919/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
