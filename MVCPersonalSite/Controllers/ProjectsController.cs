@@ -35,5 +35,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public ActionResult SAT()
+        {
+            return View();
+        }
     }
 }

@@ -203,6 +203,12 @@
     <Content Include="Content\img\disco2.JPG" />
     <Content Include="Content\img\disco3.JPG" />
     <Content Include="Content\img\disco4.JPG" />
+    <Content Include="Content\img\groupproject1.JPG" />
+    <Content Include="Content\img\groupproject2.JPG" />
+    <Content Include="Content\img\groupproject3.JPG" />
+    <Content Include="Content\img\groupproject4.JPG" />
+    <Content Include="Content\img\groupproject5.JPG" />
+    <Content Include="Content\img\groupproject6.JPG" />
     <Content Include="Content\img\inprogress.jpg" />
     <Content Include="Content\img\languagesskills\agilescrum.jpg" />
     <Content Include="Content\img\languagesskills\pic.png" />
@@ -462,6 +468,7 @@
     <Content Include="Views\Projects\StoreFront.cshtml" />
     <Content Include="Views\Projects\Scheduling.cshtml" />
     <Content Include="Views\Projects\WishList.cshtml" />
+    <Content Include="Views\Projects\SAT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -475,6 +482,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\UpsideDownUniversity.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
