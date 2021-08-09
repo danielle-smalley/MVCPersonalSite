@@ -467,7 +467,7 @@
     <Content Include="Views\Email\EmailConfirmation.cshtml" />
     <Content Include="Views\Projects\StoreFront.cshtml" />
     <Content Include="Views\Projects\WishList.cshtml" />
-    <Content Include="Views\Projects\SAT.cshtml" />
+    <Content Include="Views\Projects\Scheduling.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

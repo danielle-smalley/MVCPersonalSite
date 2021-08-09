@@ -32,7 +32,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult SAT()
+        public ActionResult Scheduling()
         {
             return View();
         }
