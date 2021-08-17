@@ -36,5 +36,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public ActionResult FinalProject()
+        {
+            return View();
+        }
     }
 }

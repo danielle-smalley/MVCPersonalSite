@@ -203,6 +203,8 @@
     <Content Include="Content\img\disco2.JPG" />
     <Content Include="Content\img\disco3.JPG" />
     <Content Include="Content\img\disco4.JPG" />
+    <Content Include="Content\img\final1.PNG" />
+    <Content Include="Content\img\final2.PNG" />
     <Content Include="Content\img\groupproject1.JPG" />
     <Content Include="Content\img\groupproject2.JPG" />
     <Content Include="Content\img\groupproject3.JPG" />
@@ -468,6 +470,7 @@
     <Content Include="Views\Projects\StoreFront.cshtml" />
     <Content Include="Views\Projects\WishList.cshtml" />
     <Content Include="Views\Projects\Scheduling.cshtml" />
+    <Content Include="Views\Projects\FinalProject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
