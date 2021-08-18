@@ -91,6 +91,9 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="reCAPTCHA.MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\reCAPTCH.MVC.1.0.1\lib\net45\reCAPTCHA.MVC.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -204,7 +207,18 @@
     <Content Include="Content\img\disco3.JPG" />
     <Content Include="Content\img\disco4.JPG" />
     <Content Include="Content\img\final1.PNG" />
+    <Content Include="Content\img\final10.PNG" />
+    <Content Include="Content\img\final11.PNG" />
+    <Content Include="Content\img\final12.PNG" />
+    <Content Include="Content\img\final13.PNG" />
     <Content Include="Content\img\final2.PNG" />
+    <Content Include="Content\img\final3.PNG" />
+    <Content Include="Content\img\final4.PNG" />
+    <Content Include="Content\img\final5.PNG" />
+    <Content Include="Content\img\final6.PNG" />
+    <Content Include="Content\img\final7.PNG" />
+    <Content Include="Content\img\final8.PNG" />
+    <Content Include="Content\img\final9.PNG" />
     <Content Include="Content\img\groupproject1.JPG" />
     <Content Include="Content\img\groupproject2.JPG" />
     <Content Include="Content\img\groupproject3.JPG" />

@@ -7,6 +7,7 @@ using System.Net; //added this for email
 using System.Configuration; //added this for email
 using System.Net.Mail; //added this for email 
 using WebApplication1.Models;
+using reCAPTCHA.MVC;
 
 namespace WebApplication1.Controllers
 {
@@ -19,7 +20,8 @@ namespace WebApplication1.Controllers
 
         [HttpPost] //need this
         [ValidateAntiForgeryToken] //and this
-        public ActionResult Contact(ContactViewModel cvm)
+        [CaptchaValidator(PrivateKey = "6LfxmQUcAAAAAJbJdlG7IGFgC8BgeG6VwTd6uYhO", ErrorMessage = "Invalid input CAPTCHA", RequiredMessage = "Please verify you are not a robot (beep boop)")]
+        public ActionResult Contact(ContactViewModel cvm, bool captchaValid)
         {//when we added a view here, we used create and checked the use scripts checkbox
             //It is best practice to confirm the "state" of the model. There's a strict definition of what the cvm (what we named above) is and will accept. We need to check the model state:
             if (!ModelState.IsValid) //behind the scenes it will take cvm that was passed in through the View and will check to see how it compares to the definition ContactViewModel. If they're not the same, it's invalid. If they are the same, then we'll return the view below. That's the only time we want the view returned.
@@ -29,6 +31,10 @@ namespace WebApplication1.Controllers
             }
             //Below code only executes if the form (object) passes model validation
 
+            if (ModelState.IsValid && captchaValid)
+            {
+
+           
             //Build the response message back to the user:
             string returnMessage = $"You have received an email from {cvm.Name} with a subject " +
                  $"{cvm.Subject}.  Please respond to {cvm.Email} with your response to " +
@@ -80,10 +86,28 @@ namespace WebApplication1.Controllers
                 }//end try catch
             }//end if
 
-            return View("EmailConfirmation", cvm); //message letting them know their email was successful
+
+            return View("EmailConfirmation", cvm);
+            }
+
+            return View(cvm);
+
+            
+            //message letting them know their email was successful
             //when we created this view, we selected Empty but not the without template, selected the controller, unchecked scripts 
             //make sure to include cvm! otherwise it totally doesn't work
 
         }//end actionresult
+
+        //[HttpPost]
+        //[CaptchaValidator(PrivateKey = "6LfxmQUcAAAAAJbJdlG7IGFgC8BgeG6VwTd6uYhO", ErrorMessage = "Invalid input CAPTCHA", RequiredMessage = "Please verify you are not a robot (beep boop)")]
+        //public ActionResult Index(ContactViewModel contact, bool captchaValid)
+        //{
+        //    if (ModelState.IsValid && captchaValid)
+        //    {
+        //        return View("reCaptchaPassed");
+        //    }
+        //    return View(contact);
+        //}
     }
 }

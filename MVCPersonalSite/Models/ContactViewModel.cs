@@ -22,5 +22,17 @@ namespace WebApplication1.Models
         [Required(ErrorMessage = "Ope! Please write your message here")]
         [UIHint("MultilineText")] //provides a text area in the UI
         public string Message { get; set; }
+
+        //private string reCaptcha;
+
+        //public string GetReCaptcha()
+        //{
+        //    return reCaptcha;
+        //}
+
+        //public void SetReCaptcha(string value)
+        //{
+        //    reCaptcha = value;
+        //}
     }
 }

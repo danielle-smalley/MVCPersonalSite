@@ -6,6 +6,8 @@
 
 @*<h2>Contact</h2>*@
 
+@using reCAPTCHA.MVC;
+
 <div>
     @if (ViewBag.CustomerMessage != null)
     {
@@ -77,6 +79,11 @@
                         @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
                     </div>
                 </div>
+                <br/>
+                @Html.Recaptcha()
+                <p style="font-weight:700;font-style:italic;" class="text-danger text-center">
+                    @Html.ValidationMessage("ReCaptcha")
+                </p>
                 <br/>
                 <div class="form-group">
                     <div class="col-md-offset-5 col-md-4">
