@@ -321,6 +321,7 @@
     <Content Include="Content\OriginalFiles\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\OriginalFiles\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\OriginalFiles\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\img\DanielleSmalleyDocumentationLMS.pdf" />
     <None Include="Content\Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Content\Scripts\hoverdir.js" />
     <Content Include="Content\Scripts\hoverex-all.css" />
@@ -519,7 +520,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50919/</IISUrl>
+          <IISUrl>http://localhost:50920/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
